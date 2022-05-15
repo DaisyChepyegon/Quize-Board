@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100vh;
+    height: 100vh;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.btn{
+    margin: 15px 15px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+
+}
+.btn:hover{
+    border-color: black;
+}
