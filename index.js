@@ -9,14 +9,23 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 let shuffledQuestions,correctQuestionsIndex;
 let quizScore=0;
 
-fu
+function selectAnswer(e){
+  const selectedButtons=e.target
+  const correct=selectedButton.dataset.correct
+
+  setStatusClass(document.body,correct)
+  Array.from(answerButtonElement.children).forEach((button)=>{
+    setStatusClass(button,button.dataset.correct)
+  })
+  
+}
 
 
 function setStatusClass(element,correct){
   clearStatusClass(element)
   if(correct){
     element.classList.add("correct")
-  }else{
+  }else{ 
     element.classList.add("wrong")
   }
 }
