@@ -6,6 +6,15 @@ body{
     width: 100vh;
     height: 100vh;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 70%;
+    height: 30%;
+    margin: 15px;
+}
 .buttons{
     display: grid;
     grid-template-columns: auto auto;

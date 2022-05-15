@@ -9,7 +9,12 @@ const answerButtonsElement = document.getElementById('answer-buttons')
 let shuffledQuestions,correctQuestionsIndex;
 let quizScore=0;
 
+startButton.addEventListener('click',startGame)
 
+nextButton.addEventListener('click',()=>{
+  currentQuestionIndex++
+  setnextQuestion()
+})
 
 function startGame(){
   startButton.classList.add('hide')
@@ -85,57 +90,58 @@ function clearStatusClass(element){
 }
 const question=[
   {
-    questions: '',
+    questions: 'What is javascript?',
     answers:[
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
+      {text:'',correct:true},
+      {text:'',correct:false},
+      {text:'',correct:false},
+      {text:'',correct:false},
     ],
   },
   {
     questions: '',
     answers:[
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
+      {text:'',correct:false},
+      {text:'',correct:false},
+      {text:'',correct:true},
+      {text:'',correct:false},
     ],
   },
   {
     questions: '',
     answers:[
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
+      {text:'',correct:false},
+      {text:'',correct:false},
+      {text:'',correct:false},
+      {text:'',correct:true},
     ]
   },
   {
     questions: '',
     answers:[
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
+      {text:'',correct:true},
+      {text:'',correct:false},
+      {text:'',correct:false},
+      {text:'',correct:false},
+     
     ]
   },
   {
     questions: '',
     answers:[
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
+      {text:'',correct:false},
+      {text:'',correct:false},
+      {text:'',correct:false},
+      {text:'',correct:true},
     ]
   },
   {
     questions: '',
     answers:[
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
-      {text:'',correct:},
+      {text:'',correct:false},
+      {text:'',correct:true},
+      {text:'',correct:false},
+      {text:'',correct:false},
     ]
   },
 
