@@ -27,14 +27,16 @@ form{
     border-radius: 6px;
     text-align: center;
 }
-.btn{
+a{
     margin-top: 70px;
-    height: 35px;
+    height: 40px;
     width: 250px;
     box-shadow: 10px solid grey;
     border-radius: 10px;
     background-color: black;
     color: white;
     font-size: 20px;
+    text-align: center;
+    text-decoration: none;
 }
 
