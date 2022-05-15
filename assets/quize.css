@@ -2,7 +2,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: blue;
     width: 100vh;
     height: 100vh;
 }
@@ -23,4 +23,37 @@ body{
 }
 .btn:hover{
     border-color: black;
+}
+.container{
+    width: 70%;
+    height: 30%;
+    background-color: white;
+    align-items: center;
+}
+.start-btn{
+    margin: 15px 15px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+
+}
+.next-btn{
+    margin: 30px 30px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
