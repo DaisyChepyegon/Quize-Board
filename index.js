@@ -1,5 +1,5 @@
 
-const startButton = document.getElementById('start')
+/*const startButton = document.getElementById('start')
 const nextButton = document.getElementById('next')
 
 const questionContainerElement = document.getElementById('questions-container')
@@ -145,4 +145,18 @@ const question=[
     ]
   },
 
-]
+]*/
+
+
+const quizeContainer = document.getElementById('questions');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+
+
+function buildQuize(){}
+
+function showResults(){}
+
+buildQuize();
+
+submitButton.addEventListener('click',showResults);
