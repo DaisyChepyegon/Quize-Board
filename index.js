@@ -12,8 +12,8 @@ function quizScore(){
     if(document.getElementById("correct5").checked){score++;};
     if(document.getElementById("correct6").checked){score++;};
 
-    document.write("Total Score:"+""+ score);
-    alert("get your total score" + calcPercentage(percentage));
+    alert("Total Score:"+""+ score);
+    alert( calcPercentage(score));
 
 }
 
@@ -24,13 +24,13 @@ function calcPercentage(score) {
 
   if(percentage>=80
     ){
-    document.write(""+ percentage + "%" +"[performed excellently]")
+    alert(""+ percentage + "%" +"[performed excellently]")
   }
   else if(percentage>=50 && percentage<80){
-    document.write(""+ percentage + "%" +"[fairly passed]")
+    alert(""+ percentage + "%" +"[fairly passed]")
   }
   else{
-    document.write(""+ percentage + "%" +"[performed poorly]")
+    alert(""+ percentage + "%" +"[performed poorly Retake Quize]")
   }
 
 }

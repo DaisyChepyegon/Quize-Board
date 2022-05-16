@@ -11,9 +11,9 @@ Daisy Chepyegon
 ## Screenshot
 
 ### Home Page
-![image](/Assets/Images/fireshot1.png)
+![image](/assets/images/quiz1.png)
 
-### QUize Page
+### Quize Page
 ![image](/Assets/Images/fireshot3.png)
 
 
@@ -81,7 +81,7 @@ https://github.com/DaisyChepyegon/Quize-Board
 
 * click the following link to view the application
 
-https://daisychepyegon.github.io/Top-Movers/
+ https://daisychepyegon.github.io/Quize-Board/
 
 ---
 

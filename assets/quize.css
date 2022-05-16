@@ -11,7 +11,7 @@ header{
     justify-content: space-between;
 }
 a{
-    height: 7vh;
+    height: 5vh;
     width: 30vh;
     text-decoration: none;
     background-color: black;
@@ -36,6 +36,7 @@ img{
 #question{
     margin-bottom: 10px;
     background-color: aqua;
+    width: 100%;
 }
 button{
     margin-top: 20px;
