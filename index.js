@@ -153,7 +153,27 @@ const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
 
-function buildQuize(){}
+function buildQuize(){
+const output=[]; //var to store the output
+
+myQuestions.forEach(
+  (currentQuestion,questionNumber)=>{
+    const answer=[];//var to store the list of possible answers
+
+    for(letter in currentQuestion.answers){
+
+      answers.push(
+        <label>
+          <input type="radio" name="question${questionNumber}"value="${letter}"></input>
+          ${letter}:
+          ${currentQuestion.answers[letter]}
+        </label>
+      )
+    }
+  }
+)
+
+}
 
 function showResults(){}
 
