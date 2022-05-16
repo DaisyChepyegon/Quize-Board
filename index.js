@@ -303,7 +303,8 @@ function quizScore(){
     calculate=score/6;
     percentage=score/6*100;
 
-    if(percentage>=){
+    if(percentage>=80
+      ){
       document.write(""+"[performed excellently]")
     }
     else if(percentage>=50 && percentage<=80){
@@ -312,4 +313,8 @@ function quizScore(){
     else{
       document.write(""+"[performed poorly]")
     }
+}
+
+function next(id){
+  document.getElementsById("question")
 }
