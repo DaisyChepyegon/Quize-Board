@@ -14,7 +14,7 @@ Daisy Chepyegon
 ![image](/assets/images/quiz1.png)
 
 ### Quize Page
-![image](/Assets/Images/fireshot3.png)
+![image](/assets/images/quiz2.png)
 
 
 # Table of Content
