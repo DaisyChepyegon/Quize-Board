@@ -316,5 +316,7 @@ function quizScore(){
 }
 
 function next(id){
-  document.getElementsById("question")
+  document.getElementsById("question")[id- 1].style.display="none";
+  document.getElementsById("question")[id].style.display="block";
+
 }
