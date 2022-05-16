@@ -1,70 +1,50 @@
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
     width: 100vh;
     height: 100vh;
+
 }
-main{
+header{
     display: flex;
-    flex-direction: column;
-    width: 100vh;
-    margin-left: 20px;
+    flex-direction: row;
+    width: 90vh;
+    height: 30vh;
+    justify-content: space-between;
+}
+a{
+    height: 7vh;
+    width: 30vh;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 90px;
 }
 img{
-    width: 70%;
-    height: 30%;
-    margin: 15px;
+    margin: 5px 20px;
 }
-.buttons{
-    display: grid;
-    grid-template-columns: auto auto;
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
     
 }
-.btn{
-    margin: 15px 15px;
-    border: 1px solid black;
-    padding: 5px 10px;
-    background-color: blue;
+#question{
+    margin-bottom: 10px;
+    background-color: aqua;
+}
+button{
+    margin-top: 20px;
+    background-color: black;
     color: white;
-    outline: none;
-    cursor: pointer;
-
-}
-.btn:hover{
-    border-color: black;
-}
-.container{
-    width: 90%;
-    height: 30%;
-    background-color: white;
+    font-size: 25px;
     align-items: center;
-}
-.start-btn{
-    margin: 15px 15px;
-    border: 1px solid black;
-    padding: 5px 10px;
-    background-color: blue;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    width: 100px;
-
-}
-.next-btn{
-    margin: 30px 30px;
-    border: 1px solid black;
-    padding: 5px 10px;
-    background-color: blue;
-    color: white;
-    outline: none;
-    cursor: pointer;
-    width: 100px;
-
-}
-.controls{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 90px;
 }

@@ -146,11 +146,12 @@ const question=[
   },
 
 ]*/
-
+/*(function(){
 
 const quizeContainer = document.getElementById('questions');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+
 
 
 function buildQuize(){
@@ -172,7 +173,7 @@ myQuestions.forEach(
     }
 //adds question and answer to output
     output.push(
-      `<div class="question">${currentQuestion.question}</div>
+      `<div class="question">${currentQuestion.questions}</div>
       <div class="answers">${answers.join('')}</div>`
     );
   }
@@ -182,32 +183,38 @@ quizeContainer.innerHTML=output.join('');//combines our output into one string
 
 }
 
-myQuestions.forEach((currentQuestion,questionNumber)=>{
-
-  const answers = [];
 
 
-for(letter in currentQuestion.answers){
+function showResults(){
+  const answerContainers = quizeContainer.querySelectorAll('.answers');
 
-  
-  answers.push(
-    `<label>
-      <input type="radio" name="question${questionNumber}" value="${letter}">
-      ${letter} :
-      ${currentQuestion.answers[letter]}
-    </label>`
-  );
+  let numCorrect = 0;
+
+
+  myQuestions.forEach( (currentQuestion, questionNumber) => {
+
+    
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+    
+    if(userAnswer === currentQuestion.correctAnswer){
+  numCorrect++;
+
+
+  answerContainers[questionNumber].style.color = 'limegreen';
 }
 
+else{
 
-output.push(
-  `<div class="question"> ${currentQuestion.question} </div>
-  <div class="answers"> ${answers.join('')} </div>`
-);
-
+  answerContainers[questionNumber].style.color = 'red';
+}
 });
 
-function showResults(){}
+resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
+}
 
 buildQuize();
 
@@ -275,3 +282,34 @@ const myQuestions =[
     correctAnswer:"c"
   }
 ]
+})();*/
+
+function quizScore(){
+    var score=0;
+    var percentage=0;
+    var  calculate=0;
+
+
+    if(document.getElementById("correct1").checked){score++;};
+    if(document.getElementById("correct2").checked){score++;};
+    if(document.getElementById("correct3").checked){score++;};
+    if(document.getElementById("correct4").checked){score++;};
+    if(document.getElementById("correct5").checked){score++;};
+    if(document.getElementById("correct6").checked){score++;};
+
+    document.write("Total Score:"+""+ score);
+    alert("get your total score");
+
+    calculate=score/6;
+    percentage=score/6*100;
+
+    if(percentage>=){
+      document.write(""+"[performed excellently]")
+    }
+    else if(percentage>=50 && percentage<=80){
+      document.write(""+"[fairly passed]")
+    }
+    else{
+      document.write(""+"[performed poorly]")
+    }
+}

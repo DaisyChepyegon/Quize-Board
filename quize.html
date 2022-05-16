@@ -5,36 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/quize.css">
+    <script src="./index.js"></script>
     <title>Quize-Board</title>
 </head>
-<body>
-    <!--<main>
-        <img src="../Quize-Board/assets/images/typing.png" alt="typing image">
+<div>
+    <header>
+        <img src="/assets/images/typing.png" alt="">
+        <a href="index.html">Back 🔙</a>
+    </header>
+    
     <div class="container">
+
+        <div id="question">
+    <div >1.How to declare an array of 10 elements in javascript?</div>
+  
+    <div >
+        <div>
+            <input type="radio" name="quize1" id="correct1">arr=new Array(10) <br>
+        </div>
+        <div>
+            <input type="radio" name="quize1" id="">var arr[10] <br>
+        </div>
+        <div>
+            <input type="radio" name="quize1" id="">var arr=array(10) <br>
+        </div>
+        <div>
+            <input type="radio" name="quize1" id="">var arr(10) <br>
+        </div>
        
-        <div id="question-container" class="hide">
-            <div id="questions">Questions</div>
-        <div id="questions">
-            <div id="answers" class="buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4 </button>
-            </div> 
-        </div>
-        <div class="control">
-            <button id="start" class="start-btn">Start</button>
-            <button id="next" class="next-btn">Next</button>
-        </div>
-        </div>
-        <div class="scores">
-              <span id="correct-ans"></span>
-        </div>
-        <script src="index.js "></script>
     </div>
-    </main>-->
-    <div id="questions"></div>
-    <button id="submit">Submit Quize</button>
-    <div id="results"></div>
+</div>
+
+<div id="question">
+    <div >2.How to get a random number between 5 and 9 inclusive?</div>
+    <div >
+        <div>
+            <input type="radio" name="quize2" id="">math.floor((math.random()*5)+4) <br>
+        </div>
+        <div>
+            <input type="radio" name="quize2" id="">math.floor((math.random()*4)+4) <br>
+        </div>
+        <div>
+            <input type="radio" name="quize2" id="">math.floor((math.random()*4)+5) <br>
+        </div>
+        <div>
+            <input type="radio" name="quize2" id="correct2">math.floor((math.random()*4)+5) <br>
+        </div>
+    </div>
+</div>
+
+    <div id="question">
+
+    <div>3.To check if three variables are equal, we are going to use_____</div>
+    <div >
+        <div>
+            <input type="radio" name="quize3" id="">x=y=z <br>
+        </div>
+        <div>
+            <input type="radio" name="quize3" id="correct3">(x==B)&&(y==z) <br>
+        </div>
+        <div>
+            <input type="radio" name="quize3" id="">(X = B) && (Y = Z) <br>
+        </div>
+        <div>
+            <input type="radio" name="quize3" id="">(X == B) & (Y == Z) <br>
+        </div>
+    </div>
+</div>
+
+
+   <div id="question">
+    <div >4.How many parameters can be passed to a function?</div>
+    <div >
+        <div>
+            <input type="radio" name="quize4" id="">any <br>
+        </div>
+        <div>
+            <input type="radio" name="quize4" id="">As much as you want <br>
+        </div>
+        <div>
+            <input type="radio" name="quize4" id="correct4">One for each argument <br>
+        </div>
+        <div>
+            <input type="radio" name="quize4" id=""> One argument <br>
+        </div>
+    </div>
+</div>
+    
+<div id="question">
+    <div >5.Which of these parameters is not valid?</div>
+    <div >
+        <div>
+            <input type="radio" name="quize5" id=""> text <br>
+        </div>
+        <div>
+            <input type="radio" name="quize5" id=""> a variable <br>
+        </div>
+        <div>
+            <input type="radio" name="quize5" id="correct5"> an operator <br>
+        </div>
+        <div>
+            <input type="radio" name="quize5" id=""> a number <br>
+        </div>
+    </div>
+</div>
+    
+<div id="question" >
+    <div >6.Which one is not a comparison operator?</div>
+    <div >
+        <div>
+            <input type="radio" name="quize6" id=""> > <br>
+        </div>
+        <div>
+            <input type="radio" name="quize6" id=""> >= <br>
+        </div>
+        <div>
+            <input type="radio" name="quize6" id="correct6"> = <br>
+        </div>
+        <div>
+            <input type="radio" name="quize6" id=""> !=
+        </div>
+    </div>
+</div>
+</div>
+
+<button id="function" type="submit" value="SUBMIT" onclick="quizScore()" >Submit</button>
+</div>
+
+
+
 </body>
 </html>
