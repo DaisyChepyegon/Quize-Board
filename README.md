@@ -55,14 +55,14 @@ take the test and get their score
 # Description
 
 I used html in creating the page structure and used css in styling the page
-and used javascript to take the users answers and calculate their score
+and used javascript to take the users answers and calculate their score and return the score as a pop up
 
 ---
 # How to set up and run the project
 1.  Open "Quiz-board" directory on terminal
 2. initialize the project with git )(git init)
 3. Go to github.com and create a new repository
-4 .create a remote repository on your computer using terminal and push your work to github.
+4. create a remote repository on your computer using terminal and push your work to github.
 5. create a branch gh-pages and push the directory once more using gh-pages as the branch.
 6. Go to github click on environment and click to view the website.
 7. Or rather you can click on the link to view the project. :https://github.com/DaisyChepyegon/Quize-Board
