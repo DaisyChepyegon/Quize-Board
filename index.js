@@ -163,17 +163,49 @@ myQuestions.forEach(
     for(letter in currentQuestion.answers){
 
       answers.push(
-        <label>
+        `<label>
           <input type="radio" name="question${questionNumber}"value="${letter}"></input>
           ${letter}:
           ${currentQuestion.answers[letter]}
-        </label>
-      )
+        </label>`
+      );
     }
+//adds question and answer to output
+    output.push(
+      `<div class="question">${currentQuestion.question}</div>
+      <div class="answers">${answers.join('')}</div>`
+    );
   }
-)
+);
+
+quizeContainer.innerHTML=output.join('');//combines our output into one string
 
 }
+
+myQuestions.forEach((currentQuestion,questionNumber)=>{
+
+  const answers = [];
+
+
+for(letter in currentQuestion.answers){
+
+  
+  answers.push(
+    `<label>
+      <input type="radio" name="question${questionNumber}" value="${letter}">
+      ${letter} :
+      ${currentQuestion.answers[letter]}
+    </label>`
+  );
+}
+
+
+output.push(
+  `<div class="question"> ${currentQuestion.question} </div>
+  <div class="answers"> ${answers.join('')} </div>`
+);
+
+});
 
 function showResults(){}
 
@@ -183,53 +215,63 @@ submitButton.addEventListener('click',showResults);
 
 const myQuestions =[
   {
-    question:"",
+    question:"How to declare an array of 10 elements in javascript?",
     answers:{
-      a:"" ,
-      b:"" ,
-      c:"" ,
-      d:""
+      a:"arr=new Array(10)" ,
+      b:"var arr[10]" ,
+      c:"var arr=array(10)" ,
+      d:"var arr(10)"
     },
-    correctAnswer:""
+    correctAnswer:"a"
   },
   {
-    question:"",
+    question:"How to get a random number between 5 and 9 inclusive?",
     answers:{
-      a:"" ,
-      b:"" ,
-      c:"" ,
-      d:""
+      a:"math.floor((math.random()*5)+4);" ,
+      b:"math.floor((math.random()*4)+4);" ,
+      c:"math.floor((math.random()*4)+5);" ,
+      d:"math.floor((math.random()*5)+5);"
     },
-    correctAnswer:""
+    correctAnswer:"d"
   },
   {
-    question:"",
+    question:"To check if three variables are equal, we are going to use_____?",
     answers:{
-      a:"" ,
-      b:"" ,
-      c:"" ,
-      d:""
+      a:"x=y=z" ,
+      b:"(x==B)&&(y==z)" ,
+      c:"(X = B) && (Y = Z)" ,
+      d:"(X == B) & (Y == Z)"
     },
-    correctAnswer:""
+    correctAnswer:"b"
   },
   {
-    question:"",
+    question:"How many parameters can be passed to a function?",
     answers:{
-      a:"" ,
-      b:"" ,
-      c:"" ,
-      d:""
+      a:"any" ,
+      b:" As much as you want" ,
+      c:"One for each argument" ,
+      d:" One argument"
     },
-    correctAnswer:""
+    correctAnswer:"c"
   },
   {
-    question:"",
+    question:"Which of these parameters is not valid?",
     answers:{
-      a:"" ,
-      b:"" ,
-      c:"" ,
-      d:""
+      a:"text" ,
+      b:"a variable" ,
+      c:"an operator" ,
+      d:"a number"
     },
-    correctAnswer:""
+    correctAnswer:"c"
+  },
+  {
+    question:"Which one is not a comparison operator?",
+    answers:{
+      a:"<" ,
+      b:">" ,
+      c:"=" ,
+      d:"!="
+    },
+    correctAnswer:"c"
   }
 ]
