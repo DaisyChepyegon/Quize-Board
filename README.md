@@ -55,8 +55,7 @@ take the test and get their score
 # Description
 
 I used html in creating the page structure and used css in styling the page
-and used javascript to take the users answers and calculate their score and return the score as a pop up
-
+and used javascript to take the users answers and calculate their score and return the score as a pop up//
 ---
 # How to set up and run the project
 1.  Open "Quiz-board" directory on terminal

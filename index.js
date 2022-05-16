@@ -13,7 +13,7 @@ function quizScore(){
     if(document.getElementById("correct6").checked){score++;};
 
     alert("Total Score:"+""+ score);
-    alert( calcPercentage(score));
+    calcPercentage(score);
 
 }
 
